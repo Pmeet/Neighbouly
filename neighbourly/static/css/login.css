@@ -1,0 +1,20 @@
+.login-form{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 12%;
+}
+
+.form-login{
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.forgot-pwd{
+    margin: 10px;
+    text-align: start
+}
+
+.nav-btn{
+    margin-left: 10px;
+}

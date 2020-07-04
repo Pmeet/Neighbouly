@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>
+        Sign up as a ..
+    </h1>
+    <a href="{% url 'user_info:signup_customer' %}">
+    <button class="btn btn-primary">Customer</button>
+    </a>
+    <a href="{% url 'user_info:signup_shopkeeper' %}">
+    <button class="btn btn-primary">Shop Owner</button>
+    </a>    
+    
+{% endblock %}
+

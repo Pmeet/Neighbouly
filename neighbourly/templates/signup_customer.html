@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load staticfiles %}
+
+{% block header_content %}
+<header class="container blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+    <div class="col-2 text-center">
+        <a class="blog-header-logo text-dark" href="{% url 'Home' %}" style="font-size: 30px; text-decoration: none">Neighbourly</a>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary nav-btn" href="{% url 'user_info:login' %}" style="margin: 10px">Login</a>
+    </div>
+    </div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="form">
+    <form  method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input type="submit" class="btn btn-primary" value="Sign Up">
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+
