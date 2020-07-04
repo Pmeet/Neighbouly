@@ -4,7 +4,7 @@ This repository includes my Neighbourly Project which I created using Django.
 If you wish to run this project follow the below steps
 
 ## Step 1
-Download and extract this entire repository
+Download and extract this entire dev branch repository
 
 ## Step 2
 Open console and change directory to neighbourly folder 
